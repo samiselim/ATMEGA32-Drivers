@@ -18,7 +18,8 @@
 #define TOGGLE_BIT(REG , PIN) 	REG ^= (1<<PIN)
 #define CHECK_BIT(REG , PIN)	REG & (1<<PIN)
 
-
+# define sei()  __asm__ __volatile__ ("sei" ::)
+# define cli()  __asm__ __volatile__ ("cli" ::)
 
 
 #endif
