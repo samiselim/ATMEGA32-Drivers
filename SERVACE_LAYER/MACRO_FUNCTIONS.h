@@ -10,6 +10,9 @@
 #ifndef _MACRO_FUNCTIONS_H
 #define _MACRO_FUNCTIONS_H
 
+/* OFFSET ADDRESS FOR SFR */
+#define __SFR_OFFSET   0x20
+
 #define _MMIO_BYTE(mem_addr) *((volatile u8 *)(mem_addr))
 
 #define SET_BIT(REG , PIN)		REG |= (1<<PIN)
